@@ -6,8 +6,8 @@
 CSC_151_DeAndreColston
 */
 
+package labs.example.hello;
 
-//this is my class name
 public class HelloWorld
 {
     public static void main(String[] args)
