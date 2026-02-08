@@ -56,6 +56,6 @@ public void sit() {
    stand();
 }
 public void stand() {
-    System.out.println("The mammal is now standing and barking!");
+    System.out.println("The mammal is now standing and barking.");
 }
 }
