@@ -4,14 +4,21 @@
 package labs.example.mammals;
 
 public class Mammal {
-    String hairColor;
-    String eyeColor;
-    double bodyTemp;
+    String hairColor = "Black";
+    String eyeColor = "Blue";
+    double bodyTemp = 98;
 
-    String agesString;
-    String weighString;
-    double height;
+    public Mammal (String hair, String eye, double temp) {
+    this.hairColor = hair;
+    this.eyeColor = eye;
+    this.bodyTemp = temp;
+    }
 
+public void getMammalDetails() {
+    System.out.println("Mammal Hair Color:" + hairColor);
+    System.out.println("Mammal Eye Color:" + eyeColor);
+    System.out.println("Mammal Body Temp:" + bodyTemp);
+}
 public void run() {
     System.out.println("The mammal is running.");
 }
@@ -38,5 +45,17 @@ public void dig() {
 }
 public void smile() {
     System.out.println("The mammal is smiling.");
+}
+public void sit() {
+    System.out.println("The mammal is sitting.");
+   try {
+    Thread.sleep(15000);
+    } catch (Exception e) {
+    System.out.println("The mammal is awake.");
+   } 
+   stand();
+}
+public void stand() {
+    System.out.println("The mammal is now standing and barking!");
 }
 }
