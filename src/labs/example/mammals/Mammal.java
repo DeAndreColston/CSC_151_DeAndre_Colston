@@ -58,4 +58,15 @@ public void sit() {
 public void stand() {
     System.out.println("The mammal is now standing and barking.");
 }
+public int walk() {
+    int south = 3;
+    int east = 4;
+    
+    double distance = Math.sqrt(Math.pow(south, 2) + Math.pow(east, 2));
+    double thetaRadians = Math.atan2(east, south);
+    double thetaDegrees = Math.toDegrees(thetaRadians);    
+    
+    System.out.println("Angle at longest leg: " + thetaDegrees);
+    return (int)distance;
+}
 }
