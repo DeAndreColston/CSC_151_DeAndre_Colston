@@ -1,6 +1,6 @@
 /*
 @author: DeAndre Colston
-@date: 2/11/2026
+@date: 2/15/2026
 @purpose: Week 5 Main Physics class
  */
 package labs.example.physics;
@@ -18,6 +18,7 @@ public class Main {
         double work = physics.getWork(7, 8);
         double KineticEnergy = physics.getKineticEnergy(10, 11);
         double PotentialEnergy = physics.getPotentialEnergy(12, 13, 14);
+        //added variables and printing distance
         System.out.println("Distance: " + distance);
         System.out.println("Velocity: " + velocity);
         System.out.println("Momentum: " + momentum);
