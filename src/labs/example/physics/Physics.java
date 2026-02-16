@@ -5,43 +5,49 @@
 */
 
 package labs.example.physics;
+import java.lang.Math;
 
 public class Physics {
     
     final static double GRAVITY = 9.81;
 
-    public double getDistance(double v, double t) {
-        double x = v * t;
-        return x;
+    public static double getDistance(int velocity, int time) {
+        double distance = velocity * time;
+        return distance;
     }
 
-    public double getVelocity(double x, double t) {
-        double v = x/t;
-        return v;
+    public static double getVelocity(int x, int t) {
+        double velocity = x/t;
+        return velocity;
     }
     
-    public double getMomentum(double m, double v) {
-        double p = m * v;
-        return p;
+    public static double getMomentum(int mass, int velocity) {
+        double momentum = mass * velocity;
+        return momentum;
     }
 
-    public double getForce(double m, double a) {
-        double f = m * a;
-        return f;
+    public static double getForce(int mass, int acceleration) {
+        double force = mass * acceleration;
+        return force;
     }
 
-    public double getWork(double f, double d) {
-        double w = f * d;
-        return w;
+    public static double getWork(int force, int distance) {
+        double work = force * distance;
+        return work;
     }
 
-    public double getKineticEnergy(double m, double v) {
-        double ke = 0.5 * m * v* v;
-        return ke;
+    public static double getKineticEnergy(int mass, int velocity) {
+        double KineticEnergy = 0.5 * mass * velocity * velocity;
+        return KineticEnergy;
     }
 
-    public double getPotentialEnergy(double m, double g, double h) {
-        double pe = m * g * h;
-        return pe;
+    public static double getPotentialEnergy(int m, int g, int h) {
+        double PotentialEnergy = m * g * h;
+        return PotentialEnergy;
+    }
+    
+    public static double getTheta(int xVal, int yVal) {
+        double theta = Math.atan2(xVal,yVal) * 180/3.1415;
+        return theta;
     }
 }
