@@ -16,8 +16,8 @@ public class Physics {
         return distance;
     }
 
-    public static double getVelocity(int x, int t) {
-        double velocity = x/t;
+    public static double getVelocity(int distance, int time) {
+        double velocity = distance / time;
         return velocity;
     }
     
@@ -37,13 +37,13 @@ public class Physics {
     }
 
     public static double getKineticEnergy(int mass, int velocity) {
-        double KineticEnergy = 0.5 * mass * velocity * velocity;
-        return KineticEnergy;
+        double kineticEnergy = 0.5 * mass * velocity * velocity;
+        return kineticEnergy;
     }
 
-    public static double getPotentialEnergy(int m, int g, int h) {
-        double PotentialEnergy = m * g * h;
-        return PotentialEnergy;
+    public static double getPotentialEnergy(int mass, int gravity, int height) {
+        double potentialEnergy = mass * gravity * height;
+        return potentialEnergy;
     }
     
     public static double getTheta(int xVal, int yVal) {

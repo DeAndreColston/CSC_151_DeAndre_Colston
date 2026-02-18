@@ -3,11 +3,11 @@
 @date: 2/16/2026
 @purpose: Week 6 Main Physics class
  */
+
 package labs.example.physics;
 import java.text.DecimalFormat;
 
 public class Main {
-
     public static void main(String[] args) {
         Physics physics = new Physics();
         
@@ -26,8 +26,8 @@ public class Main {
             physics.logValidAngleInfo(angleInDegrees);
             System.out.println("logging the angle xy degrees. This is a valid 3-4-5 triangle.");
         }
-
-        if (distance > 92947266.72) {
+        //part 2 week 6 lab calculating distance from sun to earth
+        if (distance < 92947266.72) {
             physics.logEarthToSunInvalidDistance(distanceToEarthFromSun);
         } else {
             physics.logEarthToSunValidDistance(distanceToEarthFromSun);
@@ -35,21 +35,21 @@ public class Main {
 
         DecimalFormat decimalFormat = new DecimalFormat("#,###.##");
 
-
         double distance = physics.getDistance(10, 2);
         double velocity = physics.getVelocity(6, 7);
         double momentum = physics.getMomentum(1, 2);
         double force = physics.getForce(5, 6);
         double work = physics.getWork(7, 8);
-        double KineticEnergy = physics.getKineticEnergy(10, 11);
-        double PotentialEnergy = physics.getPotentialEnergy(12, 13, 14);
+        double kineticEnergy = physics.getKineticEnergy(10, 11);
+        double potentialEnergy = physics.getPotentialEnergy(12, 13, 14);
+        
         //added variables and printing distance
-        System.out.println("Distance: " + distance);
-        System.out.println("Velocity: " + velocity);
-        System.out.println("Momentum: " + momentum);
-        System.out.println("Force: " + force);
-        System.out.println("Work: " + work);
-        System.out.println("Kinetic Energy: " + KineticEnergy);
-        System.out.println("Potential Energy: " + PotentialEnergy);
+        System.out.println("Distance: " + distance + "miles");
+        System.out.println("Velocity: " + velocity + "mph");
+        System.out.println("Momentum: " + momentum + "kg m/s");
+        System.out.println("Force: " + force + "kg m/s * s");
+        System.out.println("Work: " + work + "Joules");
+        System.out.println("Kinetic Energy: " + KineticEnergy + "Joules");
+        System.out.println("Potential Energy: " + PotentialEnergy + "Joules");
     }
 }
