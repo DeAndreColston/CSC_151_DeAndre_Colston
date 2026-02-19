@@ -49,7 +49,7 @@ public class Main {
         System.out.println("Momentum: " + momentum + "kg m/s");
         System.out.println("Force: " + force + "kg m/s * s");
         System.out.println("Work: " + work + "Joules");
-        System.out.println("Kinetic Energy: " + KineticEnergy + "Joules");
-        System.out.println("Potential Energy: " + PotentialEnergy + "Joules");
+        System.out.println("Kinetic Energy: " + kineticEnergy + "Joules");
+        System.out.println("Potential Energy: " + potentialEnergy + "Joules");
     }
 }
