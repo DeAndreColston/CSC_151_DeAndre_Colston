@@ -28,14 +28,14 @@ public class Main {
         }
         //part 2 week 6 lab calculating distance from sun to earth
         if (distance < 92947266.72) {
-            physics.logEarthToSunInvalidDistance(distanceToEarthFromSun);
+            physics.logEarthToSunInvalidDistance(distance);
         } else {
-            physics.logEarthToSunValidDistance(distanceToEarthFromSun);
+            physics.logEarthToSunValidDistance(distance);
         }
 
         DecimalFormat decimalFormat = new DecimalFormat("#,###.##");
 
-        double distance = physics.getDistance(10, 2);
+        double travelDistance = physics.getDistance(10,2);
         double velocity = physics.getVelocity(6, 7);
         double momentum = physics.getMomentum(1, 2);
         double force = physics.getForce(5, 6);
@@ -44,7 +44,7 @@ public class Main {
         double potentialEnergy = physics.getPotentialEnergy(12, 13, 14);
         
         //added variables and printing distance
-        System.out.println("Distance: " + distance + "miles");
+        System.out.println("Distance: " + travelDistance + " miles");
         System.out.println("Velocity: " + velocity + "mph");
         System.out.println("Momentum: " + momentum + "kg m/s");
         System.out.println("Force: " + force + "kg m/s * s");
