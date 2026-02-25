@@ -8,15 +8,17 @@ package labs.example.loops;
 
 public class WhileLoop {
 
-    private static void executeWhileLoop(String[] args)
-    {
-        int number = 1;
+    public static void main(String[] args) {
+        executeWhileLoop();
+    }
+    private static void executeWhileLoop() { 
+        int number = 0;
         
-        while (number <= 10)
+        while (number = 10)
         {
-            System.out.println("Hello");
             number++;
         }
-            System.out.println("That's all!");
-}
+            System.out.println("The loop executed " + number + "times");
+            return;
+    }
 }
