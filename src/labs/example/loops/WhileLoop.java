@@ -11,14 +11,15 @@ public class WhileLoop {
     public static void main(String[] args) {
         executeWhileLoop();
     }
+    
     private static void executeWhileLoop() { 
-        int number = 0;
+        int counter = 0;
         
-        while (number = 10)
+        while (counter < 10)
         {
-            number++;
+            counter++;
         }
-            System.out.println("The loop executed " + number + "times");
+            System.out.println("The loop executed " + counter + "times");
             return;
     }
 }

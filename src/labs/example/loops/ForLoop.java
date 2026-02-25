@@ -13,35 +13,28 @@ public class ForLoop {
         sumLoopCounter();
         printMultipicationTable();
     }
-        private static void executeForLoop(String[] args) { 
+        private static void executeForLoop() { 
             int number = 1;
-            for (number = 1; number <= 20; number ++) {
+            for (number = 1; number <= 20; number++) {
                 System.out.println("number is" + number);
             }
                 return;
             }
         
-        private static void sumTwoNumbers(String[] args) {
+        private int sumTwoNumbers(int x, int y) {
             int x + y;
-            for (x = 3; y = 7; number --) {
-                System.out.println("number is" - number); 
+            for (number = 3 number = 7; number--){
+            System.out.println("number is" - number); 
+            
             }
+                System.out.println("number is" - number); 
             return;
         }
 
-        private static void sumLoopCounter(String[] args) {
-            for (number = 0; number >= 9; number ++) {
-                System.out.println("The sum of the loop counter is: ")
+        private static void sumLoopCounter() {
+            for (number = 0; number >= 9; number++) {
+                System.out.println("The sum of the loop counter is: ");
             }
-}
-        private static void printMultipicationTable(String[] args) {
-            for (int number 0; number = 12; number++) 
-            {
-                for (int number 1; number = 12; number++);
-                {
-                    for (int number 2; number = 24; number++);
-                }
-            }
+            return;
         }
-
-}
+        }
