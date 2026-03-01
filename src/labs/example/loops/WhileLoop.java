@@ -9,10 +9,11 @@ package labs.example.loops;
 public class WhileLoop {
 
     public static void main(String[] args) {
-        executeWhileLoop();
+        WhileLoop wl = new WhileLoop();
+        wl.executeWhileLoop();
     }
     
-    private void executeWhileLoop() { 
+    private static void executeWhileLoop() { 
         int counter = 0;
         
         while (counter < 10)

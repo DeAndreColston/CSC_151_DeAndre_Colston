@@ -7,13 +7,13 @@
 package labs.example.loops;
 
 public class ForLoop {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         executeForLoop();
         sumTwoNumbers(3,7);
         sumLoopCounter(10);
         printMultipicationTable(5);
     }
-        //private loop increments up to 20
+        //private loop increments up to 19
         private void executeForLoop() { 
             for (int number = 0; number < 20; number++) {
                 System.out.println("number is " + number);
@@ -25,15 +25,15 @@ public class ForLoop {
 
         private int sumLoopCounter(int limit) {
             int sum = 0;
-            for (int number = 0; number <= limit; number++) {
-                System.out.println("The sum of the loop counter is: ");
-                sum = sum + number
+            for (int number = 1; number <= limit; number++) {
+                System.out.println("The sum of the loop counter is: " + sum);
+                sum = number;
             }
             return sum;
         }
-        private void printMultipicationTable(int value) {
+        private void printMultipicationTable(int number) {
             for (int m = 0; m <=12; m++) {
-                System.out.println(value + " x " + m + " = " + (value * m));
+                System.out.println(number + " x " + m + " = " + (number * m));
             }
         }
         }

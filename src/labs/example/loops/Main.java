@@ -6,17 +6,10 @@
 
 package labs.example.loops;
 
-public class main {
+public class Main {
 
-        ForLoop x = new ForLoop
+    public static void main(String[] args) {
 
-        x.executeForLoop();
-
-        int result = x.sumTwoNumbers(3,7);
-        System.out.println("The decremented sum is: " + (--result));
-
-        int totalSum = x.sumLoopCounter(10);
-        System.out.println("The sum of the loop counter is: " + totalSum);
-
-        x.printMultipicationTable(5);
+        ForLoop x = new ForLoop(); 
     }
+}
