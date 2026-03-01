@@ -13,6 +13,7 @@ public class ForLoop {
         sumLoopCounter(10);
         printMultipicationTable(5);
     }
+        //private loop increments up to 20
         private void executeForLoop() { 
             for (int number = 0; number < 20; number++) {
                 System.out.println("number is " + number);
