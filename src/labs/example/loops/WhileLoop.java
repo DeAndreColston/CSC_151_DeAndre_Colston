@@ -12,7 +12,7 @@ public class WhileLoop {
         executeWhileLoop();
     }
     
-    private static void executeWhileLoop() { 
+    private void executeWhileLoop() { 
         int counter = 0;
         
         while (counter < 10)

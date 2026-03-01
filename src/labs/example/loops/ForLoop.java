@@ -9,32 +9,30 @@ package labs.example.loops;
 public class ForLoop {
     public static void main(String[] args) {
         executeForLoop();
-        sumTwoNumbers();
-        sumLoopCounter();
-        printMultipicationTable();
+        sumTwoNumbers(3,7);
+        sumLoopCounter(10);
+        printMultipicationTable(5);
     }
-        private static void executeForLoop() { 
-            int number = 1;
-            for (number = 1; number <= 20; number++) {
-                System.out.println("number is" + number);
+        private void executeForLoop() { 
+            for (int number = 0; number < 20; number++) {
+                System.out.println("number is " + number);
             }
-                return;
-            }
-        
-        private int sumTwoNumbers(int x, int y) {
-            int x + y;
-            for (number = 3 number = 7; number--){
-            System.out.println("number is" - number); 
-            
-            }
-                System.out.println("number is" - number); 
-            return;
+        }
+        private int sumTwoNumbers(int a, int b) {
+            return a + b;
         }
 
-        private static void sumLoopCounter() {
-            for (number = 0; number >= 9; number++) {
+        private int sumLoopCounter(int limit) {
+            int sum = 0;
+            for (int number = 0; number <= limit; number++) {
                 System.out.println("The sum of the loop counter is: ");
+                sum = sum + number
             }
-            return;
+            return sum;
+        }
+        private void printMultipicationTable(int value) {
+            for (int m = 0; m <=12; m++) {
+                System.out.println(value + " x " + m + " = " + (value * m));
+            }
         }
         }
