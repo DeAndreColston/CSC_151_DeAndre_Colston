@@ -12,7 +12,7 @@ public class WhileLoop {
         WhileLoop wl = new WhileLoop();
         wl.executeWhileLoop();
     }
-    
+    // done in class by for the simplest of the three, Main.java, ForLoop.java, and this.
     private static void executeWhileLoop() { 
         int counter = 0;
         
