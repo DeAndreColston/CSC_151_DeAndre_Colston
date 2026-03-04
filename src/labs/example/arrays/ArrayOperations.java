@@ -8,22 +8,30 @@ package labs.example.arrays;
 
 public class ArrayOperations {
     public static void main(String[] args) {
+        createNewArray();
+        displayArray();
+        sortArray();
+        getDaysAndMonths();
+    }
+//part one of the lab
+    public static void createNewArray() {
 
-        final int PLAYERS = 4;
-        int[] hours = new int[PLAYERS]
+    }
 
-        Scanner keyboard = new Scanner(System.in);
+    public static void createNewArray() {
+        
+    }
+//part 2 of the lab
+    public static void sortArray() {
+        
+    }
+//part 3 of the lab
+    public static void getDaysAndMonths() {
+        int[] days = {31, 28, 31, 30, 31, 30, 31, 30, 31, 30, 31};
 
-        System.out.println("Enter the hours played by " + PLAYERS + "players")
-
-        for (int index = 0; index < SPORTS; index++)
+        for (int index = 0; index < 12; index++)
         {
-            System.out.println("Sport " + (index + 1) + ": ")
-        }
-
-        public static void createNewArray(int a) {
-            int a;
-            return a;
+            System.out.println("Month" + (index 1) + "has" + days(index) + "days.");
         }
     }
 }
