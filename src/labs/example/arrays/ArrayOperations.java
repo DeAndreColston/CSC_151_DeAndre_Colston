@@ -7,7 +7,6 @@
 package labs.example.arrays;
 
 public class ArrayOperations {
-<<<<<<< HEAD
 //part one of the lab
     public static void createNewArray() {
         int[] newArray = new int[size];
@@ -59,33 +58,6 @@ public class ArrayOperations {
         for (int i = 0; i < months.length; i++)
         {
             System.out.println("There are " + days[i] + " days in " + months[i]);
-=======
-    public static void main(String[] args) {
-        createNewArray();
-        displayArray();
-        sortArray();
-        getDaysAndMonths();
-    }
-//part one of the lab
-    public static void createNewArray() {
-
-    }
-
-    public static void createNewArray() {
-        
-    }
-//part 2 of the lab
-    public static void sortArray() {
-        
-    }
-//part 3 of the lab
-    public static void getDaysAndMonths() {
-        int[] days = {31, 28, 31, 30, 31, 30, 31, 30, 31, 30, 31};
-
-        for (int index = 0; index < 12; index++)
-        {
-            System.out.println("Month" + (index 1) + "has" + days(index) + "days.");
->>>>>>> 73e5141e7efe3163ef8ab67e7c7ff475bfc9fe41
         }
     }
 }
