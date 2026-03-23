@@ -30,14 +30,12 @@ public class ArraySum {
         } else {
             System.out.println("arr3 has the highest value: " + sum3);
         }
-        
-        public static longcalculateSum(int[] arr) {
+    } //took a phew attempts to understand on how to use long rather than void it was an issue when compiling.
+        public static long calculateSum(int[] arr) {
             long total = 0;
-            for (int num : arr) {
-                total += num;
+            for (int i = 0; i < arr.length; i++) {
+                total += arr[i];
             }
             return total;
         }
-
     }
-}

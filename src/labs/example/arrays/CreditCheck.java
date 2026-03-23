@@ -6,7 +6,7 @@
 
 public class CreditCheck {
     public static void main(String[] args) {
-
+        
         String cardNumber = "4539148803436467"; 
         
         if (isValidMod10(cardNumber)) {
@@ -15,7 +15,7 @@ public class CreditCheck {
             System.out.println("Credit Card " + cardNumber + " is not valid.");
         }
     }
-    
+    //took some time to understand how to do the Mod 10; however, the quick lesson on wednesday helped.
     public static boolean isValidMod10(String cardNo) {
         int sum = 0;
         boolean alternate = false;

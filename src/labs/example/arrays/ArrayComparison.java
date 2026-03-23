@@ -4,6 +4,7 @@
 @purpose: Week 10 Lab
 */
 
+// part 1: Week 10 Lab: pretty simple 
 public class ArrayComparison {
     public static void main(String[] args) {
         int[] firstArray = {10, 20, 30, 40, 50};
